@@ -1,0 +1,63 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    background-color: dodgerblue;
+    color: white;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+main{
+    display: flex;
+    flex-direction: column-reverse;
+}
+h1{
+    text-align: center;
+    padding: 0;
+    color: cornsilk;
+}
+article {
+    text-align: center;
+    padding: 25px;
+}
+.loader{
+    display: none;
+    margin: auto;
+}
+.song blockquote{
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+}
+#song-search{
+    display: flex;
+    flex-direction: column;
+}
+#song-search input{
+    margin: 0px auto;
+    padding: 5px 6px;
+}
+.btnEnviar{
+    background-color: rgb(245, 161, 6);
+    border: 1px solid black;
+    padding: 10px 0px;
+    transition: all .4s ease-out;
+}
+.btnEnviar:hover{
+    background-color:rgb(214, 143, 10) ;
+}
+p{
+    font-size: 1.1rem;
+    line-height: 30px
+}
+@media screen and (min-width:800px){
+    main{
+        flex-direction: row;
+    }
+
+    main > *{
+        padding: 1rem;
+        flex-basis: 50%;
+    }
+}
